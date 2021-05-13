@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Channel</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+    <!--Inicio menú-->
+    <header class="header">
+        <div>
+            <img class="logo" src="img/logo.svg" alt="logo">
+        </div>
+
+        <div class="desplegable">
+            <div>
+                <input type="checkbox" class="menu-check" id="menu">
+
+                <label class="menu-label" for="menu">
+                    <i class="fa fa-bars" id="barras" aria-hidden="true"></i>
+                </label>
+
+                <label class="menu-label2" for="menu">
+                    <i class="far fa-times-circle"></i>
+                </label>
+
+                <nav class="menu-lista">
+                    <ul>
+                        <li><a href="#episodios">EPISODIOS</a></li>
+                        <li><a href="#inicio">NOSOTROS</a></li>
+                        <li><a href="#invitadas">ENTREVISTAS</a></li>
+                        <li><a href="#temas">TÓPICOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <!--Fin menú-->
+
+    <main class="main-content">
+
+        <section class="inicio" id="inicio">
+            <h2 class="inicio-titulo">Hello <span>world</span> pale blue dot</h2>
+            <p class="inicio-texto">
+                Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
+            </p>
+            <input type="button" value="CONOCÉ MÁS" class="boton">
+        </section>
+
+        <!--Inicio episodios de podcast-->
+        <section class="episodios" id="episodios">
+            <h2 class="episodios-titulo">Episodios</h2>
+
+            <section class="episodios-content">
+                <div class="episodios-spotify">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" width="298"
+                        height="232" allow="encrypted-media"></iframe>
+
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="298"
+                        height="232" allow="encrypted-media"></iframe>
+                </div>
+
+                <div class="episodios-spotify">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="298"
+                        height="232" allow="encrypted-media"></iframe>
+
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/5qoM6yDZ7CspTcJP7xRqZT" width="298"
+                        height="232" allow="encrypted-media"></iframe>
+                </div>
+
+            </section>
+        </section>
+        <!--Fin episodios de podcast-->
+
+        <!--Inicio imagen phone y descripción-->
+        <section class="img-phone">
+            <img class="img-picture" src="./img/phone.png" alt="phone">
+            <article class="img-article">
+                <h2>De dónde venimos</h2>
+                <p>
+                    Our posturings, our imagined self-importance, the delusion that we have some provileged position
+                    in the Universe, are challenged by this point of pale light. 
+                </p>
+                <p>
+
+                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                    vastness,there is not hint that help will come from elsewhere to save us from ourselves.
+                </p>
+            </article>
+        </section>
+        <!--Fin imagen phone y descripción-->
+
+        <!--Inicio galería de imagenes-->
+        <section class="galeria" id="invitadas">
+            <h2>Invitadas/os estelares</h2>
+            <div class="galeria-content">
+                <img class="galeria-img" src="./img/grace-hopper.png" alt="grace-hopper">
+                <img class="galeria-img" src="./img/Katie-Bouman.png" alt="Katie-Bouman">
+                <img class="galeria-img" src="./img/Margaret_Hamilton.png" alt="Margaret_Hamilton">
+                <img class="galeria-img" src="./img/computer-1950s.png" alt="Univac">
+                <img class="galeria-img" src="./img/Computer-operators.png" alt="Computer">
+                <img class="galeria-img" src="./img/susan-kare.png" alt="susan-kare">
+            </div>
+        </section>
+        <!--Fin galería de imagenes-->
+
+
+        <!--Inicio temas-->
+        <section class="temas" id="temas">
+            <h2>Algunos de nuestros temas</h2>
+            <div class="temas-content">
+                <div class="temas-item">
+                    <img class="temas-icon" src="./img/icon1.svg" alt="Icon1">
+                    <h3>Trabajo remoto</h3>
+                </div>
+                <div class="temas-item">
+                    <img class="temas-icon" src="./img/icon2.svg" alt="Icon2">
+                    <h3>Repensando la programación</h3>
+                </div>
+                <div class="temas-item">
+                    <img class="temas-icon" src="./img/icon3.svg" alt="Icon3">
+                    <h3>Bases del código</h3>
+                </div>
+                <div class="temas-item">
+                    <img class="temas-icon" src="./img/icon4.svg" alt="Icon4">
+                    <h3>Seguridad informática</h3>
+                </div>
+            </div>
+        </section>
+        <!--Fin temas-->
+
+    </main>
+
+    <!--Inicio footer (novedades y redes)-->
+
+    <footer class="footer">
+        <section class="footer-novedades" id="novedades">
+            <h2>
+                ¿Querés las últimas novedades?
+            </h2>
+            <input type="button" value="ESCUCHÁ LOS EPISODIOS" id="boton-fin" class="boton">
+        </section>
+        <section class="footer-copy">
+            <p> &copy; 2019— Hello blue pale dot</p>
+
+            <div class="redes">
+                <a href="https://www.spotify.com/co/" target="_blank">
+                    <i class="fab fa-spotify"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://web.telegram.org/" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </section>
+    </footer>
+    <!--Fin footer (novedades y redes)-->
+
+    <script src="https://kit.fontawesome.com/b925ec4270.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
